@@ -1,9 +1,15 @@
-var arr=[2,2,-4];
+var arr=[];
 
-console.log("Elements are: ");
-for (var i=0;i<arr.length;i++){
-    console.log(arr[i]);
+for (var i=0;i<10;i++){
+    arr[i]=Math.floor(Math.random()*900+100);
 }
 
-var sum=arr[0]+arr[1]+arr[2];
-console.log("addition of three elements is: ",sum)
+console.log("Random number with out sorting: ");
+for (i=0;i<arr.length;i++){
+    console.log(arr[i]);
+}
+arr.sort();
+console.log("Random number after sorting: ");
+for (var j=0;j<arr.length;j++){
+    console.log(arr[j]);
+}
