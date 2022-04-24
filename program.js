@@ -1,14 +1,11 @@
 var arr=[];
 
-for (var i=0;i<10;i++){
-    arr[i]=Math.floor(Math.random()*900+100);
+for (var i=0;i<100;i++){
+    if(i%11==0){
+       arr[i]=i;
+    }
 }
-console.log("Random number generated are as follow:");
+console.log("All the repeated number till 100 is: ")
 for (var j=0;j<arr.length;j++){
     console.log(arr[j]);
 }
-
-arr.sort();
-
-console.log("The second smaleest number is: ",arr[1]);
-console.log("The second largest number is: ",arr[8]);
